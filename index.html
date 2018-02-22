@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TEST</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script>
+    function makeFunHappen(e) {
+      e.target.className += ' image'
+    }
+    document.addEventListener("DOMContentLoaded", function(event) {
+      document.getElementById('funPlace').addEventListener('click', makeFunHappen)
+    });
+    </script>
+  </head>
+  <body>
+    <h1>Here is where the fun happens</h1>
+    <hr />
+    <img id="funPlace" src="http://www.petsworld.in/blog/wp-content/uploads/2014/09/cute-kittens.jpg" />
+  </body>
+</html>
